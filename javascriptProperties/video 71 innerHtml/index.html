@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: white; 
+        }
+        .greens
+        {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container greens">
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div")
+        // div.innerHTML = "This is sanjay<b>This is me</b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").append(div);
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin","<b>I am under the water here too much raining...</b>")
+
+        // document.querySelector(".container").classList.toggle("greens") // changes the color
+
+    </script>
+</body>
+</html>

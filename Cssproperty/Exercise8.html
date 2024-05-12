@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: azure;
+            height: 80vh;
+            width: 90vw;
+            background-color: rgb(61, 241, 85);
+        }
+        .box
+        {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 75%;
+            animation: X_ANI 6s linear  infinite,
+                       Y_ANI 6s ease-in-out  infinite ;
+                       
+        }
+        @keyframes X_ANI
+        {
+            0%
+            {
+                transform: translateX(0px);
+            }   
+            100%
+            {
+                transform: translateX(80vw);
+            } 
+        }
+        @keyframes Y_ANI
+        {
+            0%
+            {
+                top: 75%;
+            }
+            10%
+            {
+                top: 55%;
+            } 
+            20%
+            {
+                top: 75%;
+            }     
+            30%
+            {
+                top: 55%;
+            } 
+            
+            40%
+            {
+                top: 75%;
+            } 
+            50%
+            {
+                top: 55%;
+            }
+            60%
+            {
+                top: 75%;
+            }
+            70%
+            {
+                top: 55%;
+            } 
+            80%
+            {
+                top: 75%;
+            }     
+            90%
+            {
+                top: 55%;
+            } 
+            
+            100%
+            {
+                top: 75%;
+            } 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>

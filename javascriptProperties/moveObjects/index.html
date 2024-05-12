@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            height: 100vh;
+            width: 100vw;
+        }
+        .box
+        {
+            border: 2px solid black;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            background-color: pink;
+            /* transform: translateX(0px), translateY(0px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        let box = document.querySelector(".box")
+        let y = 0;
+        let x = 0;
+        document.addEventListener("keyup",(e)=>{
+            if(e.key == "ArrowUp")
+            {
+                y = y-10
+
+            }
+            else if(e.key == "ArrowDown")
+            {
+                y = y+10
+
+            }
+            else if(e.key == "ArrowLeft")
+            {
+                x = x-10
+                
+            }
+            else if (e.key == "ArrowRight")
+            {
+                x = x+10
+            }
+            box.style.transform = `translate(${x}px, ${y}px)`;
+            console.log(x,y)
+        }
+    )
+    </script>
+</body>
+</html>

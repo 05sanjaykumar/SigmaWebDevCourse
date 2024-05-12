@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: azure;
+            height: 80vh;
+            width: 90vh;
+            background-color: rgb(229, 61, 241);
+            padding:100px 0px;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 50px;
+            height: 50px;
+            /* background-color: aqua; */
+            animation: newAni 3s ease-in-out 1s ;
+            animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-direction: reverse; */
+        }
+        @keyframes newAni 
+        {
+            0%
+            {
+                transform: translateX(0px) rotate(0deg);
+                
+                background-color: rgb(0, 255, 132);
+            }    
+            50%
+            {
+                transform: translateX(300px) rotate(720deg) scale(2);
+                background-color: blueviolet;
+                color: white;
+            }
+            100%
+            {
+                transform: translateX(0px) rotate(0deg);
+                background-color: rgb(0, 255, 132);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

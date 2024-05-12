@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body
+        {
+            padding: 2vh 20vh;
+            height: 1200px;
+        }
+        nav
+        {
+            top: 0;
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid black; */
+            background-color: rgb(253, 254, 255);
+        }
+        .prop
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 40vw;
+            justify-items: center;
+            align-items: center;
+            color: rgb(51, 50, 50);
+            font-family: "Ojuju", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+        }
+        .logo
+        {
+            width: 13vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-family: sans-serif;
+            line-height: 20px;
+        }
+        .mainpage
+        {
+            padding: 100px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            padding-bottom: 30px;
+        }
+        .maincontent
+        {
+            font-size: 50px;
+            color: rgb(47, 47, 47);
+        }
+        .side
+        {
+            font-size: 20px;
+        }
+        .download-button
+        {
+            margin-top: 30px;
+            background-color: rgb(0, 183, 255);
+            height: 40px;
+            width: 320px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .download-button a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .DP
+        {
+            display: flex;
+            align-items: center;
+        }
+        .CHCK
+        {
+            margin-left: 10px;
+        }
+        .item
+        {
+            height: 200px;
+            width: 350px;
+            background-color: rgba(233, 233, 233, 0.704);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            flex-direction: column;
+            /* box-shadow: -8px 9px; */
+        }
+        .lang
+        {
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .Buttuns
+        {
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        .Buttuns span
+        {
+            /* border: 2px solid black; */
+            width: 140px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+        }
+        .main-box
+        {
+            margin-top: 30px;
+            display: flex;
+            height: 50%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px 10px;
+        }
+        .first
+        {
+            background-color: rgb(0, 169, 195);
+        }
+        .second
+        {
+            background-color: rgb(20, 197, 0);
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            .prop
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .logo
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-box
+            {
+                padding: 10px 0;
+            }
+            .item
+            {
+                width: 500px;
+                height: 300px;
+            }
+            body
+            {
+                padding: 10px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="icons/noosphere.png" alt="" height="60px" width="60px">
+            <div class="insideText">
+                <b>Ultra Edit</b>
+                <h6>An ideal inc company</h6>
+            </div>
+        </div>
+        <div class="prop">
+            <div>Products <img src="icons/down-arrow.png" height="12px"></div>
+            <div>Pricing <img src="icons/down-arrow.png" height="12px"></div>
+            <div>Resources <img src="icons/down-arrow.png" height="12px"></div>
+            <div>About us <img src="icons/down-arrow.png" height="12px"></div>
+        </div>
+    </nav>
+    <div class="mainpage">
+        <div class="maincontent">Download <b>UltraEdit</b> for windows <img src="icons/quality-assurance.png" height="50px"></div>
+        <div class="side">Download and try UltraEdit before you buy it!
+            This download includes the full Windows version of the text editor
+        </div>
+        <div class="download-button"><a href="https://www.youtube.com">DOWNLOAD MAC OR LINUX VERSION</a></div>
+    </div>
+    <div class="DP">
+        <img src="icons/noosphere.png" height="50px" alt="">
+        <span class="CHCK">Download Ultra Edit </span>
+        <span>v2023.1 (released 08/16/2023) | Hotfix</span>
+    </div>
+    <div class="main-box">
+        <div class="item">
+            <div class="lang">
+                <b>English</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Hindi</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Tamil</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Kanadam</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Telegu</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Malayalam</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>French</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>German</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="lang">
+                <b>Spanish</b>
+            </div>
+            <div class="Buttuns">
+                <span class="first">Download 32-bit</span>
+                <span class="second">Download 64-bit</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
