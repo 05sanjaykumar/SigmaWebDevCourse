@@ -1,28 +1,33 @@
+
+// async function getData()
+// {
+//     return new Promise((accept,reject) => {
+//         if(Math.random()<0.6)
+//             {
+//                 reject(466)
+//             }
+//         setTimeout((e) => {
+//           accept(455)
+//         },1500)
+//     })
+// }
+
 async function getData()
 {
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve(455)
-        },3000)
-    })
+    let a = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let data = await a.json()
+    console.log(data)
 }
+
 async function main()
 {
+    console.log("loading...")
+    console.log("Fetching Data")
 
-    console.log("Modules loaded")
-    console.log("Do something else")
-    
-    console.log("Get the Data")
-    let data = await getData()
-    console.log(data)
-    console.log("Processed data")
-    console.log("Task 2")
+    let g = await getData().catch((e) => {
+      console.log(e)
+    })
+    console.log(g)
+    console.log("code completed")
 }
-// data.then((e)=>{
-
-//     console.log(data)
-//     console.log("Processed data")
-//     console.log("Task 2")
-// })
-
 main()
